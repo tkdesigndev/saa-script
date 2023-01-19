@@ -1,8 +1,7 @@
-<script>$(document).ready(function(){ $('.ertag .w-dyn-item').each(function() {$(this).attr('id', 'item-'+ $(this).children('.idtext').text().trim());}); });</script>
-<script>$(document).ready(function(){ $('.barchart .w-dyn-item').each(function() {$(this).attr('id', 'bc-'+ $(this).children('.bctext').text().trim());}); });</script>
-<script>$(document).ready(function(){ $('.barchart .w-dyn-item').each(function() {$(this).attr('id', 'ml-'+ $(this).children('.mltext').text().trim());}); });</script>
+$(document).ready(function(){ $('.ertag .w-dyn-item').each(function() {$(this).attr('id', 'item-'+ $(this).children('.idtext').text().trim());}); });
+$(document).ready(function(){ $('.barchart .w-dyn-item').each(function() {$(this).attr('id', 'bc-'+ $(this).children('.bctext').text().trim());}); });
+$(document).ready(function(){ $('.barchart .w-dyn-item').each(function() {$(this).attr('id', 'ml-'+ $(this).children('.mltext').text().trim());}); });
 
-<script>
 $(function(){
 
   /* Initial bar chart */
@@ -310,10 +309,7 @@ multiOption && multiChart.setOption(multiOption);
 
             });
 })
-</script>
 
-<script>
-	let timeStamp = new Date().toLocaleString();
-  	let formatDate2 = timeStamp.replace(new RegExp('/', 'g'), '-');
-  	$("input[name='Opt In Timestamp saa-website-tool']").val(formatDate2);
-</script>
+let timeStamp = new Date().toLocaleString();
+let formatDate2 = timeStamp.replace(new RegExp('/', 'g'), '-');
+$("input[name='Opt In Timestamp saa-website-tool']").val(formatDate2);
